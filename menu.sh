@@ -20,13 +20,17 @@ if [ $1 == -a ];then
 					case $op1 in
 						1)
 							#Agrega información al archivo SCRUM.inf
+								;;
 						2)
 							#Buscar información en el archivo SCRUM.inf
+								;;
 						3)
 							#Elimina información del archivo SCRUM.inf
+								;;
 						4)
 							#Lee información del archivo SCRUM.inf
-						;;
+								;;
+						esac
 					;;
 			2)
 				echo " X.P "
@@ -38,14 +42,17 @@ if [ $1 == -a ];then
                                         case $op2 in
                                                 1)
                                                         #Agrega información al archivo XP.inf
+								;;
                                                 2)
                                                         #Buscar información en el archivo XP.inf
+								;;
                                                 3)
                                                         #Elimina información del archivo XP.inf
+								;;
                                                 4)
                                                         #Lee información del archivo XP.inf
-                                                ;;
-
+                                               			 ;;
+						esac
 					;;
 			3)
 				echo " Kanban "
@@ -57,14 +64,17 @@ if [ $1 == -a ];then
                                         case $op3 in
                                                 1)
                                                         #Agrega información al archivo Kanban.inf
+								;;
                                                 2)
                                                         #Buscar información en el archivo Kanban.inf
+								;;
                                                 3)
                                                         #Elimina información del archivo Kanban.inf
+								;;
                                                 4)
                                                         #Lee información del archivo Kanban.inf
-                                                ;;
-
+                                                		;;
+						esac
 					;;
 			4)
 				echo " Crystal "
@@ -76,14 +86,17 @@ if [ $1 == -a ];then
                                         case $op4 in
                                                 1)
                                                         #Agrega información al archivo Crystal.inf
+								;;
                                                 2)
                                                         #Buscar información en el archivo Crystal.inf
+								;;
                                                 3)
                                                         #Elimina información del archivo Crystal.inf
+								;;
                                                 4)
                                                         #Lee información del archivo Crystal.inf
-                                                ;;
-
+                                                		;;
+						esac
 					;;
 			esac
 else
@@ -103,14 +116,17 @@ else
                                         case $opc1 in
                                                 1)
                                                         #Agrega información al archivo Cascada.inf
+								;;
                                                 2)
                                                         #Buscar información en el archivo Cascada.inf
+								;;
                                                 3)
                                                         #Elimina información del archivo Cascada.inf
+								;;
                                                 4)
                                                         #Lee información del archivo Cascada.inf
-                                                ;;
-
+                                                		;;
+						esac
 					;;
 			2)
 				echo " Espiral "
@@ -122,14 +138,17 @@ else
                                         case $opc2 in
                                                 1)
                                                         #Agrega información al archivo Espiral.inf
+								;;
                                                 2)
                                                         #Buscar información en el archivo Espiral.inf
+								;;
                                                 3)
                                                         #Elimina información del archivo Espiral.inf
+								;;
                                                 4)
                                                         #Lee información del archivo Espiral.inf
-                                                ;;
-
+                                                		;;
+						esac
 					;;
 			3)
 				echo " Modelo V "
@@ -141,14 +160,17 @@ else
                                         case $opc3 in
                                                 1)
                                                         #Agrega información al archivo ModeloV.inf
+								;;
                                                 2)
                                                         #Buscar información en el archivo ModeloV.inf
+								;;
                                                 3)
                                                         #Elimina información del archivo ModeloV.inf
+								;;
                                                 4)
                                                         #Lee información del archivo ModeloV.inf
-                                                ;;
-
+                                                		;;
+						esac
 					;;
 			esac
 fi
