@@ -1,9 +1,11 @@
-METODOLOGIAS DE DESARROLLO DE SOFTWARE
+#**METODOLOGIAS DE DESARROLLO DE SOFTWARE
 
 Proyecto del primer parcial de Desarrollo Basado en Plataformas, realizamos una aplicación que ayuda a aprender
 las diferentes metodolgías de desarrollo de software.
 
-+Requisitos+
+***
+
+##**Requisitos
 
 
 +Instalación+
@@ -20,9 +22,9 @@ las diferentes metodolgías de desarrollo de software.
 
 +Autores+
 
-Norma Angélica García Martínez 329528
-José Daniel Hermosillo López 329694
-Jesús Martín Loera Esparza 319094
+Norma Angélica García Martínez *329528
+José Daniel Hermosillo López *329694
+Jesús Martín Loera Esparza *319094
 
 +Licencia+
 
