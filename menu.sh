@@ -140,20 +140,28 @@ elif [ $1 == -a ];then
   						esac
   					;;
   			2)
+				nombre_seccion="Espiral"
   				_menu_i
   				read opc2
             case $opc2 in
               1)
                 #Agrega información al archivo Espiral.inf
+			read -p "Escriba el nombre del concepto: " concepto
+			read -p "Escriba la definición del concepto: " definicion
+
+			echo "[$concepto].- $definicion" >> ./ESPIRAL.inf
   								;;
               2)
                 #Buscar información en el archivo Espiral.inf
+			read -p "Escriba el concepto que busca: " concepto
+			grep $concepto ./ESPIRAL.inf
   								;;
               3)
                 #Elimina información del archivo Espiral.inf
   								;;
               4)
                 #Lee información del archivo Espiral.inf
+			cat ./ESPIRAL.inf
                   ;;
   						esac
   					;;
