@@ -1,14 +1,4 @@
 #!/bin/bash
-#Esta funcion muestra el menú
-function _menu(){
-  clear
-  echo ""
-  echo "---PROYECTO DEL PRIMER PARCIAL---"
-  echo "-a. Metodologías Ágiles"
-  echo "-t. Metodologías Tradicionales"
-  echo "-x. Salir"
-  echo "Ingresa una opción: "
-}
 #menu agile
 function _menu_a(){
   clear
