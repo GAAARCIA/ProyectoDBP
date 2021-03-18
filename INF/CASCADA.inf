@@ -1,0 +1,12 @@
+[cascada] .- El desarrollo en cascada (en inglés, waterfall model) es un procedimiento lineal que se caracteriza por dividir los procesos de desarrollo en sucesivas fases de proyecto.
+
+[analisis] .- Todo proyecto de software comienza con una fase de análisis que incluye un estudio de viabilidad y una definición de los requisitos.
+
+[diseño] .- La fase de diseño sirve para formular una solución específica en base a las exigencias, tareas y estrategias definidas en la fase anterior. 
+
+[implementacion] .- La arquitectura de software concebida en la fase de diseño se ejecuta en la fase de implementación, en la que se incluye la programación del software, la búsqueda de errores y las pruebas unitarias.
+
+[pruebas] .- La fase de prueba incluye la integración del software en el entorno seleccionado.
+
+[servicio] .- Una vez que la fase de prueba ha concluido con éxito, se autoriza la aplicación productiva del software.
+
