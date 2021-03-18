@@ -9,9 +9,13 @@ EMPEZANDO
 ***
 Prerequisitos
 
+	Se necesita instalar DOCKER para poder descargar la imagen
 
  Instalación
 
+	Se instala desde la terminal con los comandos:
+		apt-get update
+		apt-get install docker
 
  Corriendo pruebas
 ***
@@ -19,7 +23,7 @@ Prerequisitos
 
  Construido con
 ***
-	BASH
+	Shell
 
  Contribuciones
 ***
