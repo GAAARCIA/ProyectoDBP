@@ -1,11 +1,11 @@
-#**METODOLOGIAS DE DESARROLLO DE SOFTWARE
+**#METODOLOGIAS DE DESARROLLO DE SOFTWARE
 
 Proyecto del primer parcial de Desarrollo Basado en Plataformas, realizamos una aplicación que ayuda a aprender
 las diferentes metodolgías de desarrollo de software.
 
 ***
 
-##**Requisitos
+**##Requisitos
 
 
 +Instalación+
