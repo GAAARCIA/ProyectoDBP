@@ -2,7 +2,7 @@
 #menu agile
 function _menu_a(){
   clear
-  echo "Bienvenido a la guía rápida de Agile, para continuar seleccione un tema:"
+  echo "Bienvenido a la guía rápida de metodologías ágiles, para continuar seleccione un tema:"
   echo "1. SCRUM"
   echo "2. X.P."
   echo "3. Kanban"
@@ -36,7 +36,7 @@ if [ $1 == ""]; then
   echo "-t"
 elif [ $1 == -a ];then
   	_menu_a
-  	read -p "Seleccione la opción que desea utilizar: " opcion1
+  	read opcion1
   	case $opcion1 in
       1)
         nombre_seccion="SCRUM"
@@ -45,6 +45,7 @@ elif [ $1 == -a ];then
   					case $op1 in
   						1)
   							#Agrega información al archivo SCRUM.inf
+
   								;;
   						2)
   							#Buscar información en el archivo SCRUM.inf
@@ -78,7 +79,6 @@ elif [ $1 == -a ];then
   					;;
   			3)
           nombre_seccion="Kanban"
-  				echo " Kanban "
   				_menu_i
   				read op3
           case $op3 in
@@ -118,12 +118,12 @@ elif [ $1 == -a ];then
   			esac
   elif [ $1 == -t ];then
   	_menu_t
-  	read -p "Seleccione la opción que desea utilizar: " opcion2
+  	read opcion2
   		case $opcion2 in
   			1)
   				nombre_seccion="Cascada"
   				_menu_i
-  				read -p "Seleccione la opción que desea utilizar: " opc1
+  				read opc1
           case $opc1 in
             1)
               #Agrega información al archivo Cascada.inf
@@ -140,9 +140,8 @@ elif [ $1 == -a ];then
   						esac
   					;;
   			2)
-  				nombre_seccion="Espiral"
   				_menu_i
-  				read -p "Seleccione la opción que desea utilizar: " opc2
+  				read opc2
             case $opc2 in
               1)
                 #Agrega información al archivo Espiral.inf
@@ -161,7 +160,7 @@ elif [ $1 == -a ];then
   			3)
   				nombre_seccion="ModeloV"
   				_menu_i
-  				read -p "Seleccione la opción que desea utilizar: " opc3
+  				read opc3
             case $opc3 in
               1)
                 #Agrega información al archivo ModeloV.inf
