@@ -43,7 +43,7 @@ function _agregar() {
   nombre=($nombre_seccion)
   read -p "Escriba el nombre del concepto: " concepto
   read -p "Escriba la definición del concepto: " definicion
-  echo "[$concepto].- $definicion" >>INF/$nombre.inf
+  echo -e "\n[$concepto] .- $definicion" >>INF/$nombre.inf
   _terminar
 }
 function _buscar() {
