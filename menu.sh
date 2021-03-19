@@ -67,167 +67,174 @@ opcionInicial=$1
 opcionMenuRegreso=0
 ejecutar=1
 
-while [ $ejecutar -ne 0 ]; do
-  nombre_seccion=""
-  if [ $1 == ""]; then
-    echo "Parametro inesperado. Por favor vuelva a ejecutar y seleccione un parametro."
-    echo "-a"
-    echo "-t"
-  elif [ $1 == -a ]; then
-    _menu_a
-    read opcion1
-    case $opcion1 in
-    1)
-      nombre_seccion="SCRUM"
-      _menu_i
-      read op1
-      case $op1 in
+if [ -z "$1"]
+then
+  exit
+else
+  while [ $ejecutar -ne 0 ]; do
+    nombre_seccion=""
+    if [ $1 == ""]; then
+      echo "Parametro inesperado. Por favor vuelva a ejecutar y seleccione un parametro."
+      echo "-a"
+      echo "-t"
+    elif [ $1 == -a ]; then
+      _menu_a
+      read opcion1
+      case $opcion1 in
       1)
-        _agregar
+        nombre_seccion="SCRUM"
+        _menu_i
+        read op1
+        case $op1 in
+        1)
+          _agregar
+          ;;
+        2)
+          _buscar
+          ;;
+        3)
+          _eliminar
+          ;;
+        4)
+          _leer
+          ;;
+        esac
         ;;
       2)
-        _buscar
+        nombre_seccion="X.P"
+        _menu_i
+        read op2
+        case $op2 in
+        1)
+          _agregar
+          ;;
+        2)
+          _buscar
+          ;;
+        3)
+          _eliminar
+          ;;
+        4)
+          _leer
+          ;;
+        esac
         ;;
       3)
-        _eliminar
+        nombre_seccion="KANBAN"
+        _menu_i
+        read op3
+        case $op3 in
+        1)
+          _agregar
+          ;;
+        2)
+          _buscar
+          ;;
+        3)
+          _eliminar
+          ;;
+        4)
+          _leer
+          ;;
+        esac
         ;;
       4)
-        _leer
+        nombre_seccion="CRYSTAL"
+        _menu_i
+        read op4
+        case $op4 in
+        1)
+          _agregar
+          ;;
+        2)
+          _buscar
+          ;;
+        3)
+          _eliminar
+          ;;
+        4)
+          _leer
+          ;;
+        esac
+        ;;
+      5)
+        exit
         ;;
       esac
-      ;;
-    2)
-      nombre_seccion="X.P"
-      _menu_i
-      read op2
-      case $op2 in
+    elif [ $1 == -t ]; then
+      _menu_t
+      read opcion2
+      case $opcion2 in
       1)
-        _agregar
+        nombre_seccion="CASCADA"
+        _menu_i
+        read opc1
+        case $opc1 in
+        1)
+          _agregar
+          ;;
+        2)
+          _buscar
+          ;;
+        3)
+          _eliminar
+          ;;
+        4)
+          _leer
+          ;;
+        esac
         ;;
       2)
-        _buscar
+        nombre_seccion="ESPIRAL"
+        _menu_i
+        read opc2
+        case $opc2 in
+        1)
+          _agregar
+          ;;
+        2)
+          _buscar
+          ;;
+        3)
+          _eliminar
+          ;;
+        4)
+          _leer
+          ;;
+        esac
         ;;
       3)
-        _eliminar
+        nombre_seccion="MODELOV"
+        _menu_i
+        read opc3
+        case $opc3 in
+        1)
+          _agregar
+          ;;
+        2)
+          _buscar
+          ;;
+        3)
+          _eliminar
+          ;;
+        4)
+          _leer
+          ;;
+        esac
         ;;
       4)
-        _leer
+        exit
         ;;
       esac
-      ;;
-    3)
-      nombre_seccion="KANBAN"
-      _menu_i
-      read op3
-      case $op3 in
-      1)
-        _agregar
-        ;;
-      2)
-        _buscar
-        ;;
-      3)
-        _eliminar
-        ;;
-      4)
-        _leer
-        ;;
-      esac
-      ;;
-    4)
-      nombre_seccion="CRYSTAL"
-      _menu_i
-      read op4
-      case $op4 in
-      1)
-        _agregar
-        ;;
-      2)
-        _buscar
-        ;;
-      3)
-        _eliminar
-        ;;
-      4)
-        _leer
-        ;;
-      esac
-      ;;
-    5)
-      exit
-      ;;
-    esac
-  elif [ $1 == -t ]; then
-    _menu_t
-    read opcion2
-    case $opcion2 in
-    1)
-      nombre_seccion="CASCADA"
-      _menu_i
-      read opc1
-      case $opc1 in
-      1)
-        _agregar
-        ;;
-      2)
-        _buscar
-        ;;
-      3)
-        _eliminar
-        ;;
-      4)
-        _leer
-        ;;
-      esac
-      ;;
-    2)
-      nombre_seccion="ESPIRAL"
-      _menu_i
-      read opc2
-      case $opc2 in
-      1)
-        _agregar
-        ;;
-      2)
-        _buscar
-        ;;
-      3)
-        _eliminar
-        ;;
-      4)
-        _leer
-        ;;
-      esac
-      ;;
-    3)
-      nombre_seccion="MODELOV"
-      _menu_i
-      read opc3
-      case $opc3 in
-      1)
-        _agregar
-        ;;
-      2)
-        _buscar
-        ;;
-      3)
-        _eliminar
-        ;;
-      4)
-        _leer
-        ;;
-      esac
-      ;;
-    4)
-      exit
-      ;;
-    esac
-  else
-    echo "Parametro inesperado. Por favor vuelva a ejecutar y seleccione un parametro."
-    echo "-a"
-    echo "-t"
-    ejecutar=0
+    else
+      echo "Parametro inesperado. Por favor vuelva a ejecutar y seleccione un parametro."
+      echo "-a"
+      echo "-t"
+      ejecutar=0
 
-  fi
+    fi
 
-done
+  done
+fi
+
+
