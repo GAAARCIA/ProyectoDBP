@@ -110,7 +110,9 @@ function _buscar() {
 }
 function _eliminar() {
   nombre=($nombre_seccion)
-  echo "Se ejecuto la funcion eliminar"
+  read -p "Escriba el concepto que quiere eliminar: " concepto  
+  lineNum="$(grep -n "^\[$concepto\] \.-" ./INF/$nombre.inf | head -n 1 | cut -d: -f1)"
+  sed -i "$lineNum d" ./INF/$nombre.inf
   _terminar
 }
 function _leer() {
