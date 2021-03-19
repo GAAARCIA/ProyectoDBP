@@ -39,25 +39,25 @@ function _terminar() {
     bash menu.sh $opcionInicial | $opcionMenuRegreso
   fi
 }
-function _agregar(){
+function _agregar() {
   nombre=($nombre_seccion)
   read -p "Escriba el nombre del concepto: " concepto
   read -p "Escriba la definición del concepto: " definicion
   echo "[$concepto].- $definicion" >>INF/$nombre.inf
   _terminar
 }
-function _buscar(){
+function _buscar() {
   nombre=($nombre_seccion)
-  read -p "Escriba el concepto que busca: " concepto
-  grep $concepto INF/$nombre.inf
+  read -p "Escriba el concepto que busca: " concepto   
+  grep -i "^\[$concepto\] \.-" ./INF/$nombre.inf
   _terminar
 }
-function _eliminar(){
+function _eliminar() {
   nombre=($nombre_seccion)
   echo "Se ejecuto la funcion eliminar"
   _terminar
 }
-function _leer(){
+function _leer() {
   nombre=($nombre_seccion)
   cat INF/$nombre.inf
   _terminar
@@ -101,18 +101,18 @@ while [ $ejecutar -ne 0 ]; do
       _menu_i
       read op2
       case $op2 in
-        1)
-          _agregar
-          ;;
-        2)
-          _buscar
-          ;;
-        3)
-          _eliminar
-          ;;
-        4)
-          _leer
-          ;;
+      1)
+        _agregar
+        ;;
+      2)
+        _buscar
+        ;;
+      3)
+        _eliminar
+        ;;
+      4)
+        _leer
+        ;;
       esac
       ;;
     3)
@@ -120,18 +120,18 @@ while [ $ejecutar -ne 0 ]; do
       _menu_i
       read op3
       case $op3 in
-        1)
-          _agregar
-          ;;
-        2)
-          _buscar
-          ;;
-        3)
-          _eliminar
-          ;;
-        4)
-          _leer
-          ;;
+      1)
+        _agregar
+        ;;
+      2)
+        _buscar
+        ;;
+      3)
+        _eliminar
+        ;;
+      4)
+        _leer
+        ;;
       esac
       ;;
     4)
@@ -139,18 +139,18 @@ while [ $ejecutar -ne 0 ]; do
       _menu_i
       read op4
       case $op4 in
-        1)
-          _agregar
-          ;;
-        2)
-          _buscar
-          ;;
-        3)
-          _eliminar
-          ;;
-        4)
-          _leer
-          ;;
+      1)
+        _agregar
+        ;;
+      2)
+        _buscar
+        ;;
+      3)
+        _eliminar
+        ;;
+      4)
+        _leer
+        ;;
       esac
       ;;
     5)
@@ -166,18 +166,18 @@ while [ $ejecutar -ne 0 ]; do
       _menu_i
       read opc1
       case $opc1 in
-        1)
-          _agregar
-          ;;
-        2)
-          _buscar
-          ;;
-        3)
-          _eliminar
-          ;;
-        4)
-          _leer
-          ;;
+      1)
+        _agregar
+        ;;
+      2)
+        _buscar
+        ;;
+      3)
+        _eliminar
+        ;;
+      4)
+        _leer
+        ;;
       esac
       ;;
     2)
@@ -185,18 +185,18 @@ while [ $ejecutar -ne 0 ]; do
       _menu_i
       read opc2
       case $opc2 in
-        1)
-          _agregar
-          ;;
-        2)
-          _buscar
-          ;;
-        3)
-          _eliminar
-          ;;
-        4)
-          _leer
-          ;;
+      1)
+        _agregar
+        ;;
+      2)
+        _buscar
+        ;;
+      3)
+        _eliminar
+        ;;
+      4)
+        _leer
+        ;;
       esac
       ;;
     3)
@@ -204,18 +204,18 @@ while [ $ejecutar -ne 0 ]; do
       _menu_i
       read opc3
       case $opc3 in
-        1)
-          _agregar
-          ;;
-        2)
-          _buscar
-          ;;
-        3)
-          _eliminar
-          ;;
-        4)
-          _leer
-          ;;
+      1)
+        _agregar
+        ;;
+      2)
+        _buscar
+        ;;
+      3)
+        _eliminar
+        ;;
+      4)
+        _leer
+        ;;
       esac
       ;;
     4)
