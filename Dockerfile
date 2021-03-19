@@ -1,5 +1,6 @@
 
 FROM bash
+ENV HOME /root
 COPY ./ProyectoPrimerParcial.sh ./ProyectoPrimerParcial.sh
 ADD ./INF/SCRUM.inf ./INF/SCRUM.inf
 ADD ./INF/CRYSTAL.inf ./INF/CRYSTAL.inf
