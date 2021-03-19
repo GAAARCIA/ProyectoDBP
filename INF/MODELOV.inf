@@ -1,2 +1,9 @@
+[CORRIENTE IZQUIERDA] .- Representa la corriente donde se definen las especificaciones del sistema
 
-[] .- 
+[CORRIENTE DERECHA] .- Representa donde se comprueba el sistema, contra las especificaciones definidas en la parte izquierda
+
+[CORRIENTE BAJA] .- Esta parte representa la parte del desarrollo
+
+[CORRIENTE ESPECIFICACION] .- Consiste principalmente de todas las especificaciones de los requerimientos del usuario, especificaciones funcionales y de diseño
+
+[CORRIENTE PRUEBAS] .- Consiste de la calificacion de instalación, operacional y de rendimiento
