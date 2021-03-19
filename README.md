@@ -16,6 +16,7 @@ Prerequisitos
  Instalación
 
 	Se descarga la imagen de docker y se observa todo en la terminal
+	https://hub.docker.com/repository/docker/angelicagarcia/proyecto-dbp-p1
 
  Corriendo pruebas
 ***
