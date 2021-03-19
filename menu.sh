@@ -39,6 +39,29 @@ function _terminar() {
     bash menu.sh $opcionInicial | $opcionMenuRegreso
   fi
 }
+function _agregar(){
+  nombre=($nombre_seccion)
+  read -p "Escriba el nombre del concepto: " concepto
+  read -p "Escriba la definición del concepto: " definicion
+  echo "[$concepto].- $definicion" >>INF/$nombre.inf
+  _terminar
+}
+function _buscar(){
+  nombre=($nombre_seccion)
+  read -p "Escriba el concepto que busca: " concepto
+  grep $concepto INF/$nombre.inf
+  _terminar
+}
+function _eliminar(){
+  nombre=($nombre_seccion)
+  echo "Se ejecuto la funcion eliminar"
+  _terminar
+}
+function _leer(){
+  nombre=($nombre_seccion)
+  cat INF/$nombre.inf
+  _terminar
+}
 
 opcionInicial=$1
 opcionMenuRegreso=0
@@ -60,92 +83,74 @@ while [ $ejecutar -ne 0 ]; do
       read op1
       case $op1 in
       1)
-        #Agrega información al archivo SCRUM.inf
-        opcionMenuRegreso=0
-        _terminar
+        _agregar
         ;;
       2)
-        #Buscar información en el archivo SCRUM.inf
-        _terminar
+        _buscar
         ;;
       3)
-        #Elimina información del archivo SCRUM.inf
-        _terminar
+        _eliminar
         ;;
       4)
-        #Lee información del archivo SCRUM.inf
-        _terminar
+        _leer
         ;;
-
       esac
       ;;
     2)
-      nombre_seccion="X.P."
+      nombre_seccion="X.P"
       _menu_i
       read op2
       case $op2 in
-      1)
-        #Agrega información al archivo XP.inf
-        _terminar
-        ;;
-      2)
-        #Buscar información en el archivo XP.inf
-        _terminar
-        ;;
-      3)
-        #Elimina información del archivo XP.inf
-        _terminar
-        ;;
-      4)
-        #Lee información del archivo XP.inf
-        _terminar
-        ;;
+        1)
+          _agregar
+          ;;
+        2)
+          _buscar
+          ;;
+        3)
+          _eliminar
+          ;;
+        4)
+          _leer
+          ;;
       esac
       ;;
     3)
-      nombre_seccion="Kanban"
+      nombre_seccion="KANBAN"
       _menu_i
       read op3
       case $op3 in
-      1)
-        #Agrega información al archivo Kanban.inf
-        _terminar
-        ;;
-      2)
-        #Buscar información en el archivo Kanban.inf
-        _terminar
-        ;;
-      3)
-        #Elimina información del archivo Kanban.inf
-        _terminar
-        ;;
-      4)
-        #Lee información del archivo Kanban.inf
-        _terminar
-        ;;
+        1)
+          _agregar
+          ;;
+        2)
+          _buscar
+          ;;
+        3)
+          _eliminar
+          ;;
+        4)
+          _leer
+          ;;
       esac
       ;;
     4)
-      nombre_seccion="Crystal"
+      nombre_seccion="CRYSTAL"
       _menu_i
       read op4
       case $op4 in
-      1)
-        #Agrega información al archivo Crystal.inf
-        _terminar
-        ;;
-      2)
-        #Buscar información en el archivo Crystal.inf
-        _terminar
-        ;;
-      3)
-        #Elimina información del archivo Crystal.inf
-        _terminar
-        ;;
-      4)
-        #Lee información del archivo Crystal.inf
-        _terminar
-        ;;
+        1)
+          _agregar
+          ;;
+        2)
+          _buscar
+          ;;
+        3)
+          _eliminar
+          ;;
+        4)
+          _leer
+          ;;
       esac
       ;;
     5)
@@ -157,80 +162,60 @@ while [ $ejecutar -ne 0 ]; do
     read opcion2
     case $opcion2 in
     1)
-      nombre_seccion="Cascada"
+      nombre_seccion="CASCADA"
       _menu_i
       read opc1
       case $opc1 in
-      1)
-        #Agrega información al archivo Cascada.inf
-        _terminar
-        ;;
-      2)
-        #Buscar información en el archivo Cascada.inf
-        _terminar
-        ;;
-      3)
-        #Elimina información del archivo Cascada.inf
-        _terminar
-        ;;
-      4)
-        #Lee información del archivo Cascada.inf
-        _terminar
-        ;;
+        1)
+          _agregar
+          ;;
+        2)
+          _buscar
+          ;;
+        3)
+          _eliminar
+          ;;
+        4)
+          _leer
+          ;;
       esac
       ;;
     2)
-      nombre_seccion="Espiral"
+      nombre_seccion="ESPIRAL"
       _menu_i
       read opc2
       case $opc2 in
-      1)
-        #Agrega información al archivo Espiral.inf
-        read -p "Escriba el nombre del concepto: " concepto
-        read -p "Escriba la definición del concepto: " definicion
-
-        echo "[$concepto].- $definicion" >>./ESPIRAL.inf
-
-        _terminar
-        ;;
-      2)
-        #Buscar información en el archivo Espiral.inf
-        read -p "Escriba el concepto que busca: " concepto
-        grep $concepto ./ESPIRAL.inf
-        _terminar
-        ;;
-      3)
-        #Elimina información del archivo Espiral.inf
-        _terminar
-        ;;
-      4)
-        #Lee información del archivo Espiral.inf
-        _terminar
-        cat ./ESPIRAL.inf
-        ;;
+        1)
+          _agregar
+          ;;
+        2)
+          _buscar
+          ;;
+        3)
+          _eliminar
+          ;;
+        4)
+          _leer
+          ;;
       esac
       ;;
     3)
-      nombre_seccion="ModeloV"
+      nombre_seccion="MODELOV"
       _menu_i
       read opc3
       case $opc3 in
-      1)
-        #Agrega información al archivo ModeloV.inf
-        _terminar
-        ;;
-      2)
-        #Buscar información en el archivo ModeloV.inf
-        _terminar
-        ;;
-      3)
-        #Elimina información del archivo ModeloV.inf
-        _terminar
-        ;;
-      4)
-        #Lee información del archivo ModeloV.inf
-        _terminar
-        ;;
+        1)
+          _agregar
+          ;;
+        2)
+          _buscar
+          ;;
+        3)
+          _eliminar
+          ;;
+        4)
+          _leer
+          ;;
       esac
       ;;
     4)
