@@ -1,25 +1,32 @@
-METODOLOGIAS DE DESARROLLO DE SOFTWARE
+**METODOLOGIAS DE DESARROLLO DE SOFTWARE
 
 ***
 
-Proyecto del primer parcial de Desarrollo Basado en Plataformas, realizamos una aplicación que ayuda a aprender
-las diferentes metodolgías de desarrollo de software.
+	Proyecto del primer parcial de Desarrollo Basado en Plataformas, realizamos una aplicación que ayuda a aprender
+	las diferentes metodolgías de desarrollo de software.
 
 EMPEZANDO
 ***
 Prerequisitos
 
-	Se necesita instalar DOCKER para poder descargar la imagen
+	Se necesita instalar DOCKER para poder descargar la imagen.
+	Se instala desde la terminal con los comandos:
+                apt-get update
+                apt-get install docker
+
 
  Instalación
 
-	Se instala desde la terminal con los comandos:
-		apt-get update
-		apt-get install docker
+	Se descarga la imagen de docker y se observa todo en la terminal
 
  Corriendo pruebas
 ***
 
+ Despliegue
+***
+	Para poder desplegar este repositorio en tu ordenador con ayuda de la terminal deben usar el comando:
+		**bash menu.sh
+	y dependiendo de los metodos de desarrollo que deseas buscar, se usa el comando -t o -a 
 
  Construido con
 ***
@@ -42,4 +49,3 @@ Prerequisitos
  Licencia
 ***
 	No tiene licencia
-
