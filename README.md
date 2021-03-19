@@ -19,11 +19,14 @@ Prerequisitos
 
  Corriendo pruebas
 ***
+	Al inicio cuando ejecutamos el programa, teníamos un problema de bug infinito si no usabamos ningún
+	comando, pero se logro tener una solución.
+	Después cuando se ejecutó no se encontró ningún error y las pruebas salieron bien.
 
 
  Despliegue
 ***
-	Para poder desplegar este repositorio en tu ordenador con ayuda de la terminal deben usar el comando:
+	Para poder desplegar este repositorio en tu ordenador con ayuda de la terminal deben usar el comando
 		bash menu.sh
 	y dependiendo de los metodos de desarrollo que deseas buscar, se usa el comando -t o -a 
 
